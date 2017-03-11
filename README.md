@@ -6,7 +6,7 @@ Create a `.env` file or set environment variable:
 webhook_base_url=http://a-public-url/xxx
 ```
 
-When never you post a request to '/yyy' of this app, the request will be forwarded to http://a-public-url/xxx/yyy.
+Whenever you post a request to '/yyy' of this app, the request will be forwarded to http://a-public-url/xxx/yyy.
 
 
 ## Why?
