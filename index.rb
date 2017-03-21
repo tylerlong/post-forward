@@ -10,7 +10,8 @@ end
 
 post '/:uuid' do |uuid|
   url = "#{ENV['webhook_base_url']}/#{uuid}"
-  puts request.body.read.to_s
-  RestClient.post url, JSON.parse(request.body.read.to_s), headers
+  data = request.body.read.to_s
+  puts data
+  RestClient.post url, JSON.parse(data), headers
   'Post request forwarded'
 end
